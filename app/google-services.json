@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "333527999665",
+    "firebase_url": "https://dronetracker2.firebaseio.com",
+    "project_id": "dronetracker2",
+    "storage_bucket": "dronetracker2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:333527999665:android:1e80ddf29cf19392846e90",
+        "android_client_info": {
+          "package_name": "com.example.dronetracker2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "333527999665-adpmatr0ga2rf4jil1vbvktecl86d7t5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuFEn9drfWiXx1Q7tFB8mpu9Vax9PLEbw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "333527999665-adpmatr0ga2rf4jil1vbvktecl86d7t5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
