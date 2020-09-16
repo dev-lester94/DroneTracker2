@@ -66,8 +66,12 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setAdapter(viewPagerAdapter);
 
 
+
         client = new OkHttpClient();
         String server = "ws://10.0.2.2:9003/test-ws";
+        /*if(server == null){
+            server = "ws://10.0.2.2:9003/test-ws";
+        }*/
         Request request = new Request.Builder().url(server).build();
         MyWebsocketListener listener = new MyWebsocketListener(this);
 

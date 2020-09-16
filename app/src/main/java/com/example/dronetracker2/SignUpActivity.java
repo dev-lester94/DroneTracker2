@@ -36,6 +36,8 @@ public class SignUpActivity extends AppCompatActivity {
 
 
         mServer = findViewById(R.id.edit_server);
+        mServer.setText("ws://10.0.2.2:9003/test-ws");
+        mServer.setEnabled(false);
         mUsername = findViewById(R.id.edit_username);
         mPassword = findViewById(R.id.edit_password);
 
@@ -52,6 +54,8 @@ public class SignUpActivity extends AppCompatActivity {
     }
 
     public void login(){
+        final String server = mServer.getText().toString().trim();
+        //Log.i("serverstring", server);
         String email = mUsername.getText().toString().trim();
         final String password = mPassword.getText().toString().trim();
         Log.i("email", email);
@@ -78,6 +82,12 @@ public class SignUpActivity extends AppCompatActivity {
                             // Sign in success, update UI with the signed-in user's information
                             Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
                             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                            Log.i("serverstring", server);
+                            //Bundle bundle = new Bundle();
+                            //bundle.putString("server",server);
+                            //intent.putExtras(bundle);
+                            //extras.putString("server", server);
+                            //intent.putExtra("server", server);
                             Log.i("taskwascomplete", "taskwascomplete");
                             startActivity(intent);
                         }
