@@ -21,6 +21,8 @@ public class CurrentData {
 
     public void ProcessNewMessages(String rawMessage)
     {
+        Log.i("process message", "prdgdg");
+
         Gson gson = new GsonBuilder().create();
         MessageWrapperOperation messageWrapperAolFlightPlan;
         MessageWrapperPosition messageWrapperAolPosition;
